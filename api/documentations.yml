@@ -10,7 +10,7 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-  - url: https://lazy-blue-bullfrog-veil.cyclic.app
+  - url: https://successful-jay-fashion.cyclic.app
     description: RESTful API Server
 paths:
   /auth/register:
