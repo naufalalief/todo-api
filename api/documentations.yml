@@ -193,6 +193,8 @@ paths:
     post:
       tags:
         - User
+      security:
+        - bearerAuth: []
       summary: Create user
       requestBody:
         content:
