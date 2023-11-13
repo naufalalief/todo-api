@@ -17,10 +17,10 @@ module.exports = {
       "Users",
       [
         {
-          name: process.env.ADMIN_NAME,
-          username: process.env.ADMIN_USERNAME,
-          email: process.env.ADMIN_EMAIL,
-          password: bcrypt.hashSync(process.env.ADMIN_PASSWORD, 10),
+          name: "Vael Louisse",
+          username: "vaellouisse",
+          email: "vael@louisse.com",
+          password: "vaellouisse",
           id_level: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
