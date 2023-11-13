@@ -10,9 +10,11 @@ let swaggerDocument;
 const port = process.env.PORT || 3000;
 const rootRoute = require("./routes/");
 
-app.use(cors(
-  origin = process.env.CORS_ORIGIN,
-));
+const corsOptions = {
+  origin: process.env.CORS_ORIGIN,
+};
+
+app.use(cors(corsOptions));
 
 try {
   const file = fs.readFileSync("./api/documentations.yml", "utf8");
