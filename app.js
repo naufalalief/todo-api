@@ -10,11 +10,7 @@ let swaggerDocument;
 const port = process.env.PORT || 3000;
 const rootRoute = require("./routes/");
 
-app.use(
-  cors({
-    origin: "https://todos-apppal.netlify.app",
-  })
-);
+app.use(cors());
 
 try {
   const file = fs.readFileSync("./api/documentations.yml", "utf8");
