@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 const rootRoute = require("./routes/");
 
 app.use(cors(
-  origin = "http://localhost:3000"
+  origin = process.env.CORS_ORIGIN,
 ));
 
 try {
